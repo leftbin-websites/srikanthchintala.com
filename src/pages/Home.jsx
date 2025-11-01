@@ -62,7 +62,7 @@ export default function HomePage() {
           }}></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-amber-600/20 backdrop-blur-sm px-4 py-2 rounded-full text-amber-300 mb-6">
@@ -87,7 +87,7 @@ export default function HomePage() {
                   </Button>
                 </Link>
                 <Link to={createPageUrl("ProBono")}>
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
+                  <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 transition-colors w-full sm:w-auto">
                     Pro Bono Assistance
                   </Button>
                 </Link>
@@ -109,14 +109,14 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative hidden lg:block">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=1000&fit=crop"
                   alt="Srikanth Chintala - High Court Lawyer"
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[500px] object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-amber-600/20 rounded-full blur-3xl"></div>
               <div className="absolute -top-6 -left-6 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl"></div>
@@ -153,7 +153,7 @@ export default function HomePage() {
 
           <div className="text-center mt-12">
             <Link to={createPageUrl("PracticeAreas")}>
-              <Button size="lg" variant="outline" className="border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white">
+              <Button size="lg" className="bg-transparent border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white transition-colors">
                 View All Practice Areas
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
@@ -218,7 +218,7 @@ export default function HomePage() {
                   One of the leading lawyers' associations based in Andhra Pradesh with a strong presence across Telangana, Maharashtra, and Delhi. Backed by renowned legal experts, professors, and former High Court judges.
                 </p>
                 <Link to={createPageUrl("Organizations")}>
-                  <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 transition-colors">
                     Learn More
                   </Button>
                 </Link>
@@ -232,7 +232,7 @@ export default function HomePage() {
                   Promoting constitutional morality through pro bono legal services, Public Interest Litigations, and awareness programs on constitutional and legal issues for the economically disadvantaged.
                 </p>
                 <Link to={createPageUrl("Organizations")}>
-                  <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 transition-colors">
                     Learn More
                   </Button>
                 </Link>
@@ -258,7 +258,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Link to={createPageUrl("ProBono")}>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 w-full sm:w-auto">
+              <Button size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-amber-600 transition-colors w-full sm:w-auto">
                 Pro Bono Services
               </Button>
             </Link>

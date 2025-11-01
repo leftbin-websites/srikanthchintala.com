@@ -1,4 +1,4 @@
-# Base44 Website Standard Makefile
+# Website Standard Makefile
 # This file is copied to each new website repository
 # Provides consistent build and development commands across all projects
 

@@ -1,5 +1,4 @@
-# Base44 Website Standard GitHub Pages Deployment
-# This workflow is copied to each new website repository
+# Website GitHub Pages Deployment
 # Automatically builds and deploys the website to GitHub Pages on push to main
 
 name: Deploy GitHub Pages
@@ -45,9 +44,6 @@ jobs:
           fi
 
       - name: Build site
-        env:
-          # Root-based app: serve from root
-          BASE_PATH: /
         run: |
           npm run build
           # SPA deep links: serve index.html for unknown routes
