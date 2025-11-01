@@ -112,7 +112,7 @@ export default function HomePage() {
             <div className="relative hidden lg:block">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=1000&fit=crop"
+                  src="/srikanthchintala.com/images/srikanth-chintala-portrait.jpg"
                   alt="Srikanth Chintala - High Court Lawyer"
                   className="w-full h-[500px] object-cover object-center"
                 />

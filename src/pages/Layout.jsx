@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Scale, Menu, X, Phone, Mail, Facebook } from "lucide-react";
+import { Scale, Menu, X, Phone, Mail, Facebook, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Layout({ children, currentPageName }) {
@@ -177,9 +177,20 @@ export default function Layout({ children, currentPageName }) {
                   <span>Available on request</span>
                 </li>
                 <li className="flex items-center gap-2">
+                  <Twitter className="w-4 h-4" />
+                  <a 
+                    href="https://x.com/SrikantChintala" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-amber-500 transition-colors"
+                  >
+                    Twitter/X Profile
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
                   <Facebook className="w-4 h-4" />
                   <a 
-                    href="https://www.facebook.com/share/1BjEVzqBVt/" 
+                    href="https://www.facebook.com/srichintala" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-amber-500 transition-colors"
