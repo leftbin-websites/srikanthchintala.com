@@ -93,9 +93,10 @@ export default function AboutPage() {
             <div>
               <div className="sticky top-24">
                 <img
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&h=1000&fit=crop"
+                  src="/images/about-image.jpg"
                   alt="Srikanth Chintala"
                   className="rounded-2xl shadow-2xl w-full h-[600px] object-cover"
+                  style={{ objectPosition: "center 15%" }}
                 />
               </div>
             </div>

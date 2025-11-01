@@ -112,9 +112,10 @@ export default function HomePage() {
             <div className="relative hidden lg:block">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/srikanthchintala.com/images/srikanth-chintala-portrait.jpg"
+                  src="/images/main-photo.jpg"
                   alt="Srikanth Chintala - High Court Lawyer"
-                  className="w-full h-[500px] object-cover object-center"
+                  className="w-full h-[500px] object-cover"
+                  style={{ objectPosition: "center 15%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent"></div>
               </div>
