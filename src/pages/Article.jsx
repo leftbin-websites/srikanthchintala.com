@@ -8,13 +8,33 @@ import { format } from "date-fns";
 export default function Article() {
   const { slug } = useParams();
   
-  const { data: articles } = useQuery({
+  const { data: articles, isLoading } = useQuery({
     queryKey: ['articles'],
     queryFn: () => base44.entities.Article.list(),
     initialData: [],
   });
 
   const article = articles.find(a => a.slug === slug);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-[#fefdfb]">
+        <div className="max-w-4xl mx-auto px-6 py-12">
+          <div className="animate-pulse space-y-8">
+            <div className="h-4 w-24 bg-gray-200 rounded"></div>
+            <div className="h-12 w-3/4 bg-gray-200 rounded"></div>
+            <div className="h-4 w-1/2 bg-gray-200 rounded"></div>
+            <div className="h-64 bg-gray-200 rounded"></div>
+            <div className="space-y-3">
+              <div className="h-4 bg-gray-200 rounded"></div>
+              <div className="h-4 bg-gray-200 rounded"></div>
+              <div className="h-4 w-5/6 bg-gray-200 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (!article) {
     return (
