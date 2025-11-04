@@ -61,8 +61,11 @@ function PagesContent() {
 }
 
 export default function Pages() {
+    // Use the same base path as Vite config for React Router
+    const basename = import.meta.env.BASE_URL || '/';
+    
     return (
-        <Router>
+        <Router basename={basename}>
             <PagesContent />
         </Router>
     );

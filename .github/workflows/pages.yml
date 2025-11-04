@@ -46,8 +46,9 @@ jobs:
 
       - name: Build site
         env:
-          # Root-based app: serve from root
-          BASE_PATH: /
+          # Set base path for GitHub Pages subdirectory deployment
+          # When using custom domain, change to: BASE_PATH: /
+          BASE_PATH: /srikanthchintala.com/
         run: |
           npm run build
           # SPA deep links: serve index.html for unknown routes
