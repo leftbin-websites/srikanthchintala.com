@@ -1,6 +1,5 @@
-# Base44 Website Standard Makefile
-# This file is copied to each new website repository
-# Provides consistent build and development commands across all projects
+# Website Standard Makefile
+# Provides consistent build and development commands
 
 version?=dev
 name=$(shell basename $(CURDIR))

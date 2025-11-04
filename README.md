@@ -45,7 +45,7 @@ The site automatically deploys to GitHub Pages when changes are pushed to the `m
 
 - React + Vite
 - Tailwind CSS
-- Base44 SDK for content management
+- Content management system
 - GitHub Pages for hosting
 
 ## License
