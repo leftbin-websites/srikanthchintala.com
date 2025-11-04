@@ -1,26 +1,121 @@
-# Logs
-logs
-*.log
+# Website Factory Standard .gitignore
+# This file is copied to each new website repository
+# Prevents build artifacts and dependencies from being committed
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 lerna-debug.log*
+pnpm-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+Desktop.ini
 
-.env
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output
+
+# Cache directories
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+yarn-error.log
+
+# pnpm
+pnpm-lock.yaml
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Gatsby
+.cache/
+public/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt
+dist
+
+# Vuepress
+.vuepress/dist
+
+# TypeScript
+*.tsbuildinfo
+
+# Local env files
+.env*.local
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Lock files (comment out if you want to commit them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
