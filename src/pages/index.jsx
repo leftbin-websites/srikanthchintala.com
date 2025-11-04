@@ -54,6 +54,7 @@ function PagesContent() {
                 <Route path="/SpeakingMedia" element={<SpeakingMedia />} />
                 
                 <Route path="/Article" element={<Article />} />
+                <Route path="/article/:slug" element={<Article />} />
                 
             </Routes>
         </Layout>

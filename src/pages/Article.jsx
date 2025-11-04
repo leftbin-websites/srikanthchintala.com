@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Calendar, Clock, ArrowLeft, Share2, Linkedin, Twitter } from 'lucide-react';
 
@@ -486,15 +486,22 @@ Founder, Association for Public Interest</p>
 };
 
 export default function Article() {
+  const { slug: urlSlug } = useParams();
   const [articleSlug, setArticleSlug] = React.useState('');
   
   React.useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    if (id) {
-      setArticleSlug(id);
+    // First priority: URL parameter from route (e.g., /article/collegium-system)
+    if (urlSlug) {
+      setArticleSlug(urlSlug);
+    } else {
+      // Second priority: Query parameter (e.g., /article?id=collegium-system)
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      if (id) {
+        setArticleSlug(id);
+      }
     }
-  }, []);
+  }, [urlSlug]);
 
   const article = articlesData[articleSlug];
   

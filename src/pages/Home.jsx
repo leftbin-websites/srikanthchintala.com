@@ -91,7 +91,7 @@ export default function Home() {
       {/* Hero Featured Article */}
       {featuredArticle && (
         <section className="max-w-7xl mx-auto px-6 py-12 md:py-16">
-          <Link to={createPageUrl('Article', `?id=${featuredArticle.slug}`)} className="group block">
+          <Link to={`/article/${featuredArticle.slug}`} className="group block">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img 
                 src={featuredArticle.image} 
@@ -142,7 +142,7 @@ export default function Home() {
           {otherArticles.map((article) => (
             <Link 
               key={article.id} 
-              to={createPageUrl('Article', `?id=${article.slug}`)}
+              to={`/article/${article.slug}`}
               className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#e0ddd8]"
             >
               <div className="relative overflow-hidden">
